@@ -46,11 +46,11 @@ function adelante () {
     serial.writeString("" + (pins.analogReadPin(AnalogPin.P0)))
     serial.writeString(" ")
 }
+let auxmin = 0
+let auxmax = 0
 let max = 0
 let min = 0
 let serial2 = 0
-let auxmax = 0
-let auxmin = 0
 while (pins.analogReadPin(AnalogPin.P0) > 30) {
     adelante()
 }
